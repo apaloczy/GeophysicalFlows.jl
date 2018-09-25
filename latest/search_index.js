@@ -9,9 +9,9 @@ var documenterSearchIndex = {"docs": [
 },
 
 {
-    "location": "index.html#FourierFlows.jl-Documentation-1",
+    "location": "index.html#GeophysicalFlows.jl-Documentation-1",
     "page": "Home",
-    "title": "FourierFlows.jl Documentation",
+    "title": "GeophysicalFlows.jl Documentation",
     "category": "section",
     "text": ""
 },
@@ -21,39 +21,7 @@ var documenterSearchIndex = {"docs": [
     "page": "Home",
     "title": "Overview",
     "category": "section",
-    "text": "FourierFlows provides solvers for partial differential equations on doubly-periodic domains using Fourier-based pseudospectral methods. A central intent of the software\'s design is also to provide a framework for writing new, fast solvers for new physical problems. The code is written in Julia."
-},
-
-{
-    "location": "index.html#Usage-1",
-    "page": "Home",
-    "title": "Usage",
-    "category": "section",
-    "text": "The code solves partial differential equations of the general form:partial_t u = mathcalLu + mathcalN(u) We decompose the right hand side of the above in a linear part (mathcalLu) and a nonlinear part (mathcalN(u)). The nonlinear part may include external forcing, e.g., mathcalN(u) = -upartial_x u + f."
-},
-
-{
-    "location": "index.html#Installation-1",
-    "page": "Home",
-    "title": "Installation",
-    "category": "section",
-    "text": "FourierFlows is a registered package and so can be installed via Pkg.add.Pkg.add(\"FourierFlows\")For now, this package supports Julia 0.6. Support for version 0.7 is on its way."
-},
-
-{
-    "location": "index.html#Writing-fast-solvers-1",
-    "page": "Home",
-    "title": "Writing fast solvers",
-    "category": "section",
-    "text": "The performance-intensive part of the code involves just two functions: the time-stepping scheme stepforward!, and the function calcN! that calculates the nonlinear part of the given equation\'s right-hand side. Optimization of these two functions for a given problem will produce the fastest possible code."
-},
-
-{
-    "location": "index.html#Future-work-1",
-    "page": "Home",
-    "title": "Future work",
-    "category": "section",
-    "text": "The code is in the chaotic stage of development. A main goal for the future is to permit the use of shared memory parallelism in the compute-intensive routines (shared-memory parallelism provided already by FFTW/MKLFFT, but is not yet native to Julia for things like element-wise matrix multiplication, addition, and assignment). This feature may possibly be enabled by Intel Lab\'s ParallelAccelerator package."
+    "text": ""
 },
 
 {
@@ -61,7 +29,7 @@ var documenterSearchIndex = {"docs": [
     "page": "Home",
     "title": "Developers",
     "category": "section",
-    "text": "FourierFlows is currently being developed by Gregory L. Wagner and Navid C. Constantinou."
+    "text": "GeophysicalFlows is currently being developed by Gregory L. Wagner and Navid C. Constantinou."
 },
 
 {
@@ -69,7 +37,7 @@ var documenterSearchIndex = {"docs": [
     "page": "Home",
     "title": "Cite",
     "category": "section",
-    "text": "The code is citable via zenodo. Please cite as:Gregory L. Wagner & Navid C. Constantinou. (2018). FourierFlows/FourierFlows.jl: FourierFlows v0.1.1 (Version v0.1.1). Zenodo.  http://doi.org/10.5281/zenodo.1302136"
+    "text": "The code is citable via zenodo. Please cite as:Gregory L. Wagner & Navid C. Constantinou. (2018). FourierFlows/FourierFlows.jl. Zenodo.  https://doi.org/10.5281/zenodo.1161724"
 },
 
 {
