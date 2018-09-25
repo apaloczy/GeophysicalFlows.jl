@@ -429,7 +429,7 @@ var documenterSearchIndex = {"docs": [
     "page": "Functions",
     "title": "GeophysicalFlows.TwoDTurb.Problem",
     "category": "method",
-    "text": "Problem(; parameters...)\n\nConstruct an 2D turbulence problem.\n\n\n\n\n\n"
+    "text": "Problem(; parameters...)\n\nConstruct a 2D turbulence problem.\n\n\n\n\n\n"
 },
 
 {
