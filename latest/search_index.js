@@ -209,14 +209,6 @@ var documenterSearchIndex = {"docs": [
 },
 
 {
-    "location": "man/types.html#GeophysicalFlows.TwoDTurb.ForcedParams",
-    "page": "Private types",
-    "title": "GeophysicalFlows.TwoDTurb.ForcedParams",
-    "category": "type",
-    "text": "ForcedParams(nu, nnu, mu, nmu, calcF!)\n\nReturns the params for forced two-dimensional turbulence.\n\n\n\n\n\n"
-},
-
-{
     "location": "man/types.html#GeophysicalFlows.TwoDTurb.ForcedVars-Tuple{Any}",
     "page": "Private types",
     "title": "GeophysicalFlows.TwoDTurb.ForcedVars",
@@ -229,7 +221,15 @@ var documenterSearchIndex = {"docs": [
     "page": "Private types",
     "title": "GeophysicalFlows.TwoDTurb.Params",
     "category": "type",
-    "text": "Params(nu, nnu, mu, nmu)\n\nReturns the params for unforced two-dimensional turbulence.\n\n\n\n\n\n"
+    "text": "Params(nu, nnu, mu, nmu, calcF!)\n\nReturns the params for two-dimensional turbulence.\n\n\n\n\n\n"
+},
+
+{
+    "location": "man/types.html#GeophysicalFlows.TwoDTurb.StochasticForcedVars-Tuple{Any}",
+    "page": "Private types",
+    "title": "GeophysicalFlows.TwoDTurb.StochasticForcedVars",
+    "category": "method",
+    "text": "StochasticForcedVars(g; T)\n\nReturns the vars for stochastically forced two-dimensional turbulence with grid g.\n\n\n\n\n\n"
 },
 
 {
@@ -413,7 +413,7 @@ var documenterSearchIndex = {"docs": [
     "page": "Functions",
     "title": "GeophysicalFlows.TwoDTurb.drag",
     "category": "method",
-    "text": "drag(prob)\ndrag(s, v, p, g)\n\nReturns the extraction of domain-averaged energy by drag mu.\n\n\n\n\n\n"
+    "text": "drag(prob)\ndrag(s, v, p, g)\n\nReturns the extraction of domain-averaged energy by drag/hypodrag mu.\n\n\n\n\n\n"
 },
 
 {
