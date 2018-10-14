@@ -385,14 +385,6 @@ var documenterSearchIndex = {"docs": [
 },
 
 {
-    "location": "man/functions.html#GeophysicalFlows.TwoDTurb.Equation-Tuple{GeophysicalFlows.TwoDTurb.Params,Any}",
-    "page": "Functions",
-    "title": "GeophysicalFlows.TwoDTurb.Equation",
-    "category": "method",
-    "text": "Equation(p, g)\n\nReturns the equation for two-dimensional turbulence with params p and grid g.\n\n\n\n\n\n"
-},
-
-{
     "location": "man/functions.html#GeophysicalFlows.TwoDTurb.Problem-Tuple{}",
     "page": "Functions",
     "title": "GeophysicalFlows.TwoDTurb.Problem",
