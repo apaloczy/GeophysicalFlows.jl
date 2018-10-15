@@ -249,26 +249,10 @@ var documenterSearchIndex = {"docs": [
 },
 
 {
-    "location": "man/types.html#GeophysicalFlows.BarotropicQG.ForcedParams",
-    "page": "Private types",
-    "title": "GeophysicalFlows.BarotropicQG.ForcedParams",
-    "category": "type",
-    "text": "ForcedParams(g::TwoDGrid, f0, beta, FU, eta, mu, nu, nnu)\n\nReturns the params for an forced two-dimensional barotropic QG problem.\n\n\n\n\n\n"
-},
-
-{
-    "location": "man/types.html#GeophysicalFlows.BarotropicQG.ForcedParams-Tuple{FourierFlows.TwoDGrid,Any,Any,Function,Any,Any,Any,Function,Function}",
-    "page": "Private types",
-    "title": "GeophysicalFlows.BarotropicQG.ForcedParams",
-    "category": "method",
-    "text": "ForcedParams(g::TwoDGrid, f0, beta, eta::Function, mu, nu, nnu, calcFU, calcFq)\n\nConstructor for Params that accepts a generating function for the topographic PV.\n\n\n\n\n\n"
-},
-
-{
-    "location": "man/types.html#GeophysicalFlows.BarotropicQG.ForcedVars",
+    "location": "man/types.html#GeophysicalFlows.BarotropicQG.ForcedVars-Tuple{Any}",
     "page": "Private types",
     "title": "GeophysicalFlows.BarotropicQG.ForcedVars",
-    "category": "type",
+    "category": "method",
     "text": "ForcedVars(g)\n\nReturns the vars for forced two-dimensional barotropic QG problem with grid g.\n\n\n\n\n\n"
 },
 
@@ -277,22 +261,30 @@ var documenterSearchIndex = {"docs": [
     "page": "Private types",
     "title": "GeophysicalFlows.BarotropicQG.Params",
     "category": "type",
-    "text": "Params(g::TwoDGrid, f0, beta, FU, eta, mu, nu, nnu)\n\nReturns the params for an unforced two-dimensional barotropic QG problem.\n\n\n\n\n\n"
+    "text": "Params(g::TwoDGrid, f0, beta, FU, eta, mu, nu, nnu, calcFU, calcFq)\n\nReturns the params for an unforced two-dimensional barotropic QG problem.\n\n\n\n\n\n"
 },
 
 {
-    "location": "man/types.html#GeophysicalFlows.BarotropicQG.Params-Tuple{FourierFlows.TwoDGrid,Any,Any,Function,Any,Any,Any}",
+    "location": "man/types.html#GeophysicalFlows.BarotropicQG.Params-Tuple{FourierFlows.TwoDGrid,Any,Any,Function,Any,Any,Any,Any,Any}",
     "page": "Private types",
     "title": "GeophysicalFlows.BarotropicQG.Params",
     "category": "method",
-    "text": "Params(g::TwoDGrid, f0, beta, eta::Function, mu, nu, nnu)\n\nConstructor for Params that accepts a generating function for the topographic PV.\n\n\n\n\n\n"
+    "text": "Params(g::TwoDGrid, f0, beta, eta::Function, mu, nu, nnu, calcFU, calcFq)\n\nConstructor for Params that accepts a generating function for the topographic PV.\n\n\n\n\n\n"
 },
 
 {
-    "location": "man/types.html#GeophysicalFlows.BarotropicQG.Vars",
+    "location": "man/types.html#GeophysicalFlows.BarotropicQG.StochasticForcedVars-Tuple{Any}",
+    "page": "Private types",
+    "title": "GeophysicalFlows.BarotropicQG.StochasticForcedVars",
+    "category": "method",
+    "text": "StochasticForcedVars(g)\n\nReturns the vars for stochastically forced two-dimensional barotropic QG problem with grid g.\n\n\n\n\n\n"
+},
+
+{
+    "location": "man/types.html#GeophysicalFlows.BarotropicQG.Vars-Tuple{Any}",
     "page": "Private types",
     "title": "GeophysicalFlows.BarotropicQG.Vars",
-    "category": "type",
+    "category": "method",
     "text": "Vars(g)\n\nReturns the vars for unforced two-dimensional barotropic QG problem with grid g.\n\n\n\n\n\n"
 },
 
@@ -454,6 +446,86 @@ var documenterSearchIndex = {"docs": [
     "title": "Functions exported from TwoDTurb:",
     "category": "section",
     "text": "Modules = [GeophysicalFlows.TwoDTurb]\nPrivate = false\nOrder = [:function]"
+},
+
+{
+    "location": "man/functions.html#GeophysicalFlows.BarotropicQG.Problem-Tuple{}",
+    "page": "Functions",
+    "title": "GeophysicalFlows.BarotropicQG.Problem",
+    "category": "method",
+    "text": "Problem(; parameters...)\n\nConstruct a BarotropicQG turbulence problem.\n\n\n\n\n\n"
+},
+
+{
+    "location": "man/functions.html#GeophysicalFlows.BarotropicQG.dissipation-NTuple{4,Any}",
+    "page": "Functions",
+    "title": "GeophysicalFlows.BarotropicQG.dissipation",
+    "category": "method",
+    "text": "dissipation(prob)\ndissipation(s, v, p, g)\n\nReturns the domain-averaged dissipation rate. nnu must be >= 1.\n\n\n\n\n\n"
+},
+
+{
+    "location": "man/functions.html#GeophysicalFlows.BarotropicQG.drag-NTuple{4,Any}",
+    "page": "Functions",
+    "title": "GeophysicalFlows.BarotropicQG.drag",
+    "category": "method",
+    "text": "drag(prob)\ndrag(s, v, p, g)\n\nReturns the extraction of domain-averaged energy by drag mu.\n\n\n\n\n\n"
+},
+
+{
+    "location": "man/functions.html#GeophysicalFlows.BarotropicQG.energy-Tuple{FourierFlows.AbstractProblem}",
+    "page": "Functions",
+    "title": "GeophysicalFlows.BarotropicQG.energy",
+    "category": "method",
+    "text": "Calculate the domain-averaged kinetic energy.\n\n\n\n\n\n"
+},
+
+{
+    "location": "man/functions.html#GeophysicalFlows.BarotropicQG.enstrophy-Tuple{Any}",
+    "page": "Functions",
+    "title": "GeophysicalFlows.BarotropicQG.enstrophy",
+    "category": "method",
+    "text": "Returns the domain-averaged enstrophy.\n\n\n\n\n\n"
+},
+
+{
+    "location": "man/functions.html#GeophysicalFlows.BarotropicQG.meanenergy-Tuple{Any}",
+    "page": "Functions",
+    "title": "GeophysicalFlows.BarotropicQG.meanenergy",
+    "category": "method",
+    "text": "Returns the energy of the domain-averaged U.\n\n\n\n\n\n"
+},
+
+{
+    "location": "man/functions.html#GeophysicalFlows.BarotropicQG.meanenstrophy-Tuple{Any}",
+    "page": "Functions",
+    "title": "GeophysicalFlows.BarotropicQG.meanenstrophy",
+    "category": "method",
+    "text": "Returns the enstrophy of the domain-averaged U.\n\n\n\n\n\n"
+},
+
+{
+    "location": "man/functions.html#GeophysicalFlows.BarotropicQG.set_zeta!-Tuple{Any,GeophysicalFlows.BarotropicQG.Vars,Any,Any,Any}",
+    "page": "Functions",
+    "title": "GeophysicalFlows.BarotropicQG.set_zeta!",
+    "category": "method",
+    "text": "set_zeta!(prob, zeta)\nset_zeta!(s, v, g, zeta)\n\nSet the solution s.sol as the transform of zeta and update variables v on the grid g.\n\n\n\n\n\n"
+},
+
+{
+    "location": "man/functions.html#GeophysicalFlows.BarotropicQG.updatevars!-NTuple{4,Any}",
+    "page": "Functions",
+    "title": "GeophysicalFlows.BarotropicQG.updatevars!",
+    "category": "method",
+    "text": "updatevars!(v, s, g)\n\nUpdate the vars in v on the grid g with the solution in s.sol.\n\n\n\n\n\n"
+},
+
+{
+    "location": "man/functions.html#GeophysicalFlows.BarotropicQG.work-Tuple{Any,GeophysicalFlows.BarotropicQG.ForcedVars,Any}",
+    "page": "Functions",
+    "title": "GeophysicalFlows.BarotropicQG.work",
+    "category": "method",
+    "text": "work(prob)\nwork(s, v, p, g)\n\nReturns the domain-averaged rate of work of energy by the forcing Fqh.\n\n\n\n\n\n"
 },
 
 {
