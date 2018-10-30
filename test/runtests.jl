@@ -75,6 +75,8 @@ end
   @test test_bqg_rossbywave("FilteredForwardEuler", 1e-4, 2000)
   @test test_bqg_advection(0.0005, "ForwardEuler")
   @test test_bqg_formstress(0.01, "ForwardEuler")
+  @test test_bqg_formstress(0.01, "ETDRK4")
+  # @test test_bqg_formstress(0.01, "FilteredETDRK4")
   @test test_bqg_energyenstrophy()
   @test test_bqg_meanenergyenstrophy()
   @test test_bqg_deterministicforcingbudgets()
