@@ -216,7 +216,7 @@ end
 
 Returns the domain-averaged kinetic energy in `sol`.
 """
-@inline function energy(sol, v, g)
+function energy(sol, v, g)
   @. v.uh = g.invKrsq * abs2(sol) # |\hat{zeta}|^2/k^2
   1/(2*g.Lx*g.Ly)*parsevalsum(v.uh, g)
 end
@@ -227,7 +227,7 @@ energy(prob) = energy(prob.sol, prob.vars, prob.grid)
 
 Returns the domain-averaged enstrophy in `sol`.
 """
-@inline enstrophy(sol, g) = 1/(2*g.Lx*g.Ly)*parsevalsum2(sol, g)
+enstrophy(sol, g) = 1/(2*g.Lx*g.Ly)*parsevalsum2(sol, g)
 enstrophy(prob) = enstrophy(prob.sol, prob.grid)
 
 """
@@ -235,7 +235,7 @@ enstrophy(prob) = enstrophy(prob.sol, prob.grid)
 
 Returns the domain-averaged dissipation rate. nnu must be >= 1.
 """
-@inline function dissipation(sol, v, p, g)
+function dissipation(sol, v, p, g)
   @. v.uh = g.Krsq^(p.nnu-1) * abs2(sol)
   v.uh[1, 1] = 0
   p.nu/(g.Lx*g.Ly)*parsevalsum(v.uh, g)
@@ -248,12 +248,12 @@ dissipation(prob) = dissipation(prob.sol, prob.vars, prob.params, prob.grid)
 
 Returns the domain-averaged rate of work of energy by the forcing `F`.
 """
-@inline function work(sol, v::ForcedVars, g)
+function work(sol, v::ForcedVars, g)
   @. v.uh = g.invKrsq * sol * conj(v.F)
   1/(g.Lx*g.Ly)*parsevalsum(v.uh, g)
 end
 
-@inline function work(sol, v::StochasticForcedVars, g)
+function work(sol, v::StochasticForcedVars, g)
   @. v.uh = 0.5 * g.invKrsq * (v.prevsol + sol) * conj(v.F) # Stratonovich
   # @. v.uh = g.invKrsq * v.prevsol * conj(v.Fh)            # Ito
   1/(g.Lx*g.Ly)*parsevalsum(v.uh, g)
@@ -265,7 +265,7 @@ work(prob) = work(prob.sol, prob.vars, prob.grid)
 
 Returns the extraction of domain-averaged energy by drag/hypodrag `mu`.
 """
-@inline function drag(sol, v, p, g)
+function drag(sol, v, p, g)
   @. v.uh = g.Krsq^(p.nmu-1) * abs2(sol)
   v.uh[1, 1] = 0
   p.mu/(g.Lx*g.Ly)*parsevalsum(v.uh, g)
