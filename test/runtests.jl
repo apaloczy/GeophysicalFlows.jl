@@ -9,11 +9,11 @@ using
 
 import # use 'import' rather than 'using' for submodules to keep namespace clean
   GeophysicalFlows.TwoDTurb,
-  GeophysicalFlows.BarotropicQG
+  GeophysicalFlows.BarotropicQG,
+  GeophysicalFlows.NIWQG
   #GeophysicalFlows.BarotropicQGQL,
   #GeophysicalFlows.VerticallyCosineBoussinesq,
   #GeophysicalFlows.VerticallyFourierBoussinesq,
-  #GeophysicalFlows.NIWQG
 
 using GeophysicalFlows: lambdipole
 using FourierFlows: parsevalsum, xmoment, ymoment
@@ -83,7 +83,6 @@ end
   @test test_bqg_stochasticforcingbudgets()
 end
 
-
 #=
 @testset "BarotropicQGQL" begin
   include("test_barotropicqgql.jl")
@@ -103,6 +102,7 @@ end
   @test test_fourier_lambdipole(256, 1e-3)
   @test test_fourier_groupvelocity(16)
 end
+=#
 
 @testset "NIWQG" begin
   include("test_niwqg.jl")
@@ -110,21 +110,21 @@ end
   @test test_set_q()
   @test test_set_phi()
 
-  @test test_niwqg_lambdipole(nx=256, dt=1e-3, stepper="FilteredRK4")
-  @test test_niwqg_lambdipole(nx=256, dt=1e-3, stepper="FilteredETDRK4")
+  @test test_niwqg_lambdipole(nx=256, dt=1e-3, stepper="RK4")
+  @test test_niwqg_lambdipole(nx=256, dt=1e-3, stepper="ETDRK4")
 
-  @test test_niwqg_groupvelocity(nkw=16, stepper="FilteredRK4")
-  @test test_niwqg_groupvelocity(nkw=16, stepper="FilteredETDRK4")
+  @test test_niwqg_groupvelocity(nkw=16, stepper="RK4")
+  @test test_niwqg_groupvelocity(nkw=16, stepper="ETDRK4")
 
   @test test_niwqg_forcing_q(dt=0.01, stepper="RK4", nsteps=100)
-  @test test_niwqg_forcing_q(dt=0.01, stepper="FilteredRK4", nsteps=100)
+  @test test_niwqg_forcing_q(dt=0.01, stepper="RK4", nsteps=100)
   @test test_niwqg_forcing_phi(dt=0.01, stepper="RK4", nsteps=100, muw=0, nu=0.01, nnu=0)
-  @test test_niwqg_forcing_phi(dt=0.01, stepper="FilteredRK4", nsteps=100, muw=0, nu=0.01, nnu=0)
-  @test test_niwqg_forcing_phi(dt=0.01, stepper="FilteredRK4", nsteps=100, nu=0, muw=0.02, nmuw=1)
+  @test test_niwqg_forcing_phi(dt=0.01, stepper="RK4", nsteps=100, muw=0, nu=0.01, nnu=0)
+  @test test_niwqg_forcing_phi(dt=0.01, stepper="RK4", nsteps=100, nu=0, muw=0.02, nmuw=1)
 
-  @test test_niwqg_nonlinear1(dt=0.01, stepper="FilteredRK4", nsteps=100)
-  @test test_niwqg_nonlinear2(dt=0.01, stepper="FilteredRK4", nsteps=100)
-  @test test_niwqg_wavepv(dt=0.01, stepper="FilteredRK4", nsteps=100)
+  @test test_niwqg_nonlinear1(dt=0.01, stepper="RK4", nsteps=100)
+  @test test_niwqg_nonlinear2(dt=0.01, stepper="RK4", nsteps=100)
+  @test test_niwqg_wavepv(dt=0.01, stepper="RK4", nsteps=100)
 
   @test test_niwqg_calczetah()
   @test test_niwqg_energetics()
@@ -136,7 +136,6 @@ end
 
   @test test_niwqg_exactnonlinearsolution(nsteps=50)
 end
-=#
 
 end # time
 
