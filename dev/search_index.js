@@ -1,7 +1,7 @@
 var documenterSearchIndex = {"docs": [
 
 {
-    "location": "index.html#",
+    "location": "#",
     "page": "Home",
     "title": "Home",
     "category": "page",
@@ -9,7 +9,7 @@ var documenterSearchIndex = {"docs": [
 },
 
 {
-    "location": "index.html#GeophysicalFlows.jl-Documentation-1",
+    "location": "#GeophysicalFlows.jl-Documentation-1",
     "page": "Home",
     "title": "GeophysicalFlows.jl Documentation",
     "category": "section",
@@ -17,7 +17,7 @@ var documenterSearchIndex = {"docs": [
 },
 
 {
-    "location": "index.html#Overview-1",
+    "location": "#Overview-1",
     "page": "Home",
     "title": "Overview",
     "category": "section",
@@ -25,7 +25,7 @@ var documenterSearchIndex = {"docs": [
 },
 
 {
-    "location": "index.html#Developers-1",
+    "location": "#Developers-1",
     "page": "Home",
     "title": "Developers",
     "category": "section",
@@ -33,7 +33,7 @@ var documenterSearchIndex = {"docs": [
 },
 
 {
-    "location": "modules/twodturb.html#",
+    "location": "modules/twodturb/#",
     "page": "TwoDTurb Module",
     "title": "TwoDTurb Module",
     "category": "page",
@@ -41,7 +41,7 @@ var documenterSearchIndex = {"docs": [
 },
 
 {
-    "location": "modules/twodturb.html#TwoDTurb-Module-1",
+    "location": "modules/twodturb/#TwoDTurb-Module-1",
     "page": "TwoDTurb Module",
     "title": "TwoDTurb Module",
     "category": "section",
@@ -49,7 +49,7 @@ var documenterSearchIndex = {"docs": [
 },
 
 {
-    "location": "modules/twodturb.html#Basic-Equations-1",
+    "location": "modules/twodturb/#Basic-Equations-1",
     "page": "TwoDTurb Module",
     "title": "Basic Equations",
     "category": "section",
@@ -57,7 +57,7 @@ var documenterSearchIndex = {"docs": [
 },
 
 {
-    "location": "modules/twodturb.html#Implementation-1",
+    "location": "modules/twodturb/#Implementation-1",
     "page": "TwoDTurb Module",
     "title": "Implementation",
     "category": "section",
@@ -65,7 +65,7 @@ var documenterSearchIndex = {"docs": [
 },
 
 {
-    "location": "modules/twodturb.html#AbstractTypes-and-Functions-1",
+    "location": "modules/twodturb/#AbstractTypes-and-Functions-1",
     "page": "TwoDTurb Module",
     "title": "AbstractTypes and Functions",
     "category": "section",
@@ -73,7 +73,7 @@ var documenterSearchIndex = {"docs": [
 },
 
 {
-    "location": "modules/twodturb.html#Examples-1",
+    "location": "modules/twodturb/#Examples-1",
     "page": "TwoDTurb Module",
     "title": "Examples",
     "category": "section",
@@ -81,7 +81,7 @@ var documenterSearchIndex = {"docs": [
 },
 
 {
-    "location": "modules/barotropicqg.html#",
+    "location": "modules/barotropicqg/#",
     "page": "BarotropicQG Module",
     "title": "BarotropicQG Module",
     "category": "page",
@@ -89,7 +89,7 @@ var documenterSearchIndex = {"docs": [
 },
 
 {
-    "location": "modules/barotropicqg.html#BarotropicQG-Module-1",
+    "location": "modules/barotropicqg/#BarotropicQG-Module-1",
     "page": "BarotropicQG Module",
     "title": "BarotropicQG Module",
     "category": "section",
@@ -97,7 +97,7 @@ var documenterSearchIndex = {"docs": [
 },
 
 {
-    "location": "modules/barotropicqg.html#Basic-Equations-1",
+    "location": "modules/barotropicqg/#Basic-Equations-1",
     "page": "BarotropicQG Module",
     "title": "Basic Equations",
     "category": "section",
@@ -105,7 +105,7 @@ var documenterSearchIndex = {"docs": [
 },
 
 {
-    "location": "modules/barotropicqg.html#Implementation-1",
+    "location": "modules/barotropicqg/#Implementation-1",
     "page": "BarotropicQG Module",
     "title": "Implementation",
     "category": "section",
@@ -113,7 +113,7 @@ var documenterSearchIndex = {"docs": [
 },
 
 {
-    "location": "modules/barotropicqg.html#Examples-1",
+    "location": "modules/barotropicqg/#Examples-1",
     "page": "BarotropicQG Module",
     "title": "Examples",
     "category": "section",
@@ -121,7 +121,7 @@ var documenterSearchIndex = {"docs": [
 },
 
 {
-    "location": "man/types.html#",
+    "location": "man/types/#",
     "page": "Private types",
     "title": "Private types",
     "category": "page",
@@ -129,7 +129,7 @@ var documenterSearchIndex = {"docs": [
 },
 
 {
-    "location": "man/types.html#Private-types-1",
+    "location": "man/types/#Private-types-1",
     "page": "Private types",
     "title": "Private types",
     "category": "section",
@@ -137,7 +137,7 @@ var documenterSearchIndex = {"docs": [
 },
 
 {
-    "location": "man/types.html#Private-types-in-module-GeophysicalFlows:-1",
+    "location": "man/types/#Private-types-in-module-GeophysicalFlows:-1",
     "page": "Private types",
     "title": "Private types in module GeophysicalFlows:",
     "category": "section",
@@ -145,7 +145,7 @@ var documenterSearchIndex = {"docs": [
 },
 
 {
-    "location": "man/types.html#GeophysicalFlows.TwoDTurb.ForcedVars-Tuple{Any}",
+    "location": "man/types/#GeophysicalFlows.TwoDTurb.ForcedVars-Tuple{Any}",
     "page": "Private types",
     "title": "GeophysicalFlows.TwoDTurb.ForcedVars",
     "category": "method",
@@ -153,7 +153,7 @@ var documenterSearchIndex = {"docs": [
 },
 
 {
-    "location": "man/types.html#GeophysicalFlows.TwoDTurb.Params",
+    "location": "man/types/#GeophysicalFlows.TwoDTurb.Params",
     "page": "Private types",
     "title": "GeophysicalFlows.TwoDTurb.Params",
     "category": "type",
@@ -161,7 +161,7 @@ var documenterSearchIndex = {"docs": [
 },
 
 {
-    "location": "man/types.html#GeophysicalFlows.TwoDTurb.StochasticForcedVars-Tuple{Any}",
+    "location": "man/types/#GeophysicalFlows.TwoDTurb.StochasticForcedVars-Tuple{Any}",
     "page": "Private types",
     "title": "GeophysicalFlows.TwoDTurb.StochasticForcedVars",
     "category": "method",
@@ -169,7 +169,7 @@ var documenterSearchIndex = {"docs": [
 },
 
 {
-    "location": "man/types.html#GeophysicalFlows.TwoDTurb.Vars-Tuple{Any}",
+    "location": "man/types/#GeophysicalFlows.TwoDTurb.Vars-Tuple{Any}",
     "page": "Private types",
     "title": "GeophysicalFlows.TwoDTurb.Vars",
     "category": "method",
@@ -177,7 +177,7 @@ var documenterSearchIndex = {"docs": [
 },
 
 {
-    "location": "man/types.html#Private-types-in-module-TwoDTurb:-1",
+    "location": "man/types/#Private-types-in-module-TwoDTurb:-1",
     "page": "Private types",
     "title": "Private types in module TwoDTurb:",
     "category": "section",
@@ -185,7 +185,7 @@ var documenterSearchIndex = {"docs": [
 },
 
 {
-    "location": "man/types.html#GeophysicalFlows.BarotropicQG.ForcedVars-Tuple{Any}",
+    "location": "man/types/#GeophysicalFlows.BarotropicQG.ForcedVars-Tuple{Any}",
     "page": "Private types",
     "title": "GeophysicalFlows.BarotropicQG.ForcedVars",
     "category": "method",
@@ -193,7 +193,7 @@ var documenterSearchIndex = {"docs": [
 },
 
 {
-    "location": "man/types.html#GeophysicalFlows.BarotropicQG.Params",
+    "location": "man/types/#GeophysicalFlows.BarotropicQG.Params",
     "page": "Private types",
     "title": "GeophysicalFlows.BarotropicQG.Params",
     "category": "type",
@@ -201,7 +201,7 @@ var documenterSearchIndex = {"docs": [
 },
 
 {
-    "location": "man/types.html#GeophysicalFlows.BarotropicQG.Params-Tuple{Any,Any,Any,Function,Any,Any,Any,Any,Any}",
+    "location": "man/types/#GeophysicalFlows.BarotropicQG.Params-Tuple{Any,Any,Any,Function,Any,Any,Any,Any,Any}",
     "page": "Private types",
     "title": "GeophysicalFlows.BarotropicQG.Params",
     "category": "method",
@@ -209,7 +209,7 @@ var documenterSearchIndex = {"docs": [
 },
 
 {
-    "location": "man/types.html#GeophysicalFlows.BarotropicQG.StochasticForcedVars-Tuple{Any}",
+    "location": "man/types/#GeophysicalFlows.BarotropicQG.StochasticForcedVars-Tuple{Any}",
     "page": "Private types",
     "title": "GeophysicalFlows.BarotropicQG.StochasticForcedVars",
     "category": "method",
@@ -217,7 +217,7 @@ var documenterSearchIndex = {"docs": [
 },
 
 {
-    "location": "man/types.html#GeophysicalFlows.BarotropicQG.Vars-Tuple{Any}",
+    "location": "man/types/#GeophysicalFlows.BarotropicQG.Vars-Tuple{Any}",
     "page": "Private types",
     "title": "GeophysicalFlows.BarotropicQG.Vars",
     "category": "method",
@@ -225,7 +225,7 @@ var documenterSearchIndex = {"docs": [
 },
 
 {
-    "location": "man/types.html#Private-types-in-module-BarotropicQG:-1",
+    "location": "man/types/#Private-types-in-module-BarotropicQG:-1",
     "page": "Private types",
     "title": "Private types in module BarotropicQG:",
     "category": "section",
@@ -233,7 +233,7 @@ var documenterSearchIndex = {"docs": [
 },
 
 {
-    "location": "man/functions.html#",
+    "location": "man/functions/#",
     "page": "Functions",
     "title": "Functions",
     "category": "page",
@@ -241,7 +241,7 @@ var documenterSearchIndex = {"docs": [
 },
 
 {
-    "location": "man/functions.html#Functions-1",
+    "location": "man/functions/#Functions-1",
     "page": "Functions",
     "title": "Functions",
     "category": "section",
@@ -249,7 +249,7 @@ var documenterSearchIndex = {"docs": [
 },
 
 {
-    "location": "man/functions.html#Functions-exported-from-GeophysicalFlows:-1",
+    "location": "man/functions/#Functions-exported-from-GeophysicalFlows:-1",
     "page": "Functions",
     "title": "Functions exported from GeophysicalFlows:",
     "category": "section",
@@ -257,7 +257,7 @@ var documenterSearchIndex = {"docs": [
 },
 
 {
-    "location": "man/functions.html#GeophysicalFlows.TwoDTurb.Problem-Tuple{}",
+    "location": "man/functions/#GeophysicalFlows.TwoDTurb.Problem-Tuple{}",
     "page": "Functions",
     "title": "GeophysicalFlows.TwoDTurb.Problem",
     "category": "method",
@@ -265,7 +265,7 @@ var documenterSearchIndex = {"docs": [
 },
 
 {
-    "location": "man/functions.html#GeophysicalFlows.TwoDTurb.dissipation-Tuple{Any}",
+    "location": "man/functions/#GeophysicalFlows.TwoDTurb.dissipation-Tuple{Any}",
     "page": "Functions",
     "title": "GeophysicalFlows.TwoDTurb.dissipation",
     "category": "method",
@@ -273,7 +273,7 @@ var documenterSearchIndex = {"docs": [
 },
 
 {
-    "location": "man/functions.html#GeophysicalFlows.TwoDTurb.drag-Tuple{Any}",
+    "location": "man/functions/#GeophysicalFlows.TwoDTurb.drag-Tuple{Any}",
     "page": "Functions",
     "title": "GeophysicalFlows.TwoDTurb.drag",
     "category": "method",
@@ -281,7 +281,7 @@ var documenterSearchIndex = {"docs": [
 },
 
 {
-    "location": "man/functions.html#GeophysicalFlows.TwoDTurb.energy-Tuple{Any}",
+    "location": "man/functions/#GeophysicalFlows.TwoDTurb.energy-Tuple{Any}",
     "page": "Functions",
     "title": "GeophysicalFlows.TwoDTurb.energy",
     "category": "method",
@@ -289,7 +289,7 @@ var documenterSearchIndex = {"docs": [
 },
 
 {
-    "location": "man/functions.html#GeophysicalFlows.TwoDTurb.enstrophy-Tuple{Any}",
+    "location": "man/functions/#GeophysicalFlows.TwoDTurb.enstrophy-Tuple{Any}",
     "page": "Functions",
     "title": "GeophysicalFlows.TwoDTurb.enstrophy",
     "category": "method",
@@ -297,7 +297,7 @@ var documenterSearchIndex = {"docs": [
 },
 
 {
-    "location": "man/functions.html#GeophysicalFlows.TwoDTurb.set_q!-Tuple{Any,Any}",
+    "location": "man/functions/#GeophysicalFlows.TwoDTurb.set_q!-Tuple{Any,Any}",
     "page": "Functions",
     "title": "GeophysicalFlows.TwoDTurb.set_q!",
     "category": "method",
@@ -305,7 +305,7 @@ var documenterSearchIndex = {"docs": [
 },
 
 {
-    "location": "man/functions.html#GeophysicalFlows.TwoDTurb.updatevars!-Tuple{Any}",
+    "location": "man/functions/#GeophysicalFlows.TwoDTurb.updatevars!-Tuple{Any}",
     "page": "Functions",
     "title": "GeophysicalFlows.TwoDTurb.updatevars!",
     "category": "method",
@@ -313,7 +313,7 @@ var documenterSearchIndex = {"docs": [
 },
 
 {
-    "location": "man/functions.html#GeophysicalFlows.TwoDTurb.work-Tuple{Any,GeophysicalFlows.TwoDTurb.ForcedVars,Any}",
+    "location": "man/functions/#GeophysicalFlows.TwoDTurb.work-Tuple{Any,GeophysicalFlows.TwoDTurb.ForcedVars,Any}",
     "page": "Functions",
     "title": "GeophysicalFlows.TwoDTurb.work",
     "category": "method",
@@ -321,7 +321,7 @@ var documenterSearchIndex = {"docs": [
 },
 
 {
-    "location": "man/functions.html#Functions-exported-from-TwoDTurb:-1",
+    "location": "man/functions/#Functions-exported-from-TwoDTurb:-1",
     "page": "Functions",
     "title": "Functions exported from TwoDTurb:",
     "category": "section",
@@ -329,7 +329,7 @@ var documenterSearchIndex = {"docs": [
 },
 
 {
-    "location": "man/functions.html#GeophysicalFlows.BarotropicQG.dissipation-NTuple{4,Any}",
+    "location": "man/functions/#GeophysicalFlows.BarotropicQG.dissipation-NTuple{4,Any}",
     "page": "Functions",
     "title": "GeophysicalFlows.BarotropicQG.dissipation",
     "category": "method",
@@ -337,7 +337,7 @@ var documenterSearchIndex = {"docs": [
 },
 
 {
-    "location": "man/functions.html#GeophysicalFlows.BarotropicQG.drag-NTuple{4,Any}",
+    "location": "man/functions/#GeophysicalFlows.BarotropicQG.drag-NTuple{4,Any}",
     "page": "Functions",
     "title": "GeophysicalFlows.BarotropicQG.drag",
     "category": "method",
@@ -345,7 +345,7 @@ var documenterSearchIndex = {"docs": [
 },
 
 {
-    "location": "man/functions.html#GeophysicalFlows.BarotropicQG.energy-Tuple{Any}",
+    "location": "man/functions/#GeophysicalFlows.BarotropicQG.energy-Tuple{Any}",
     "page": "Functions",
     "title": "GeophysicalFlows.BarotropicQG.energy",
     "category": "method",
@@ -353,7 +353,7 @@ var documenterSearchIndex = {"docs": [
 },
 
 {
-    "location": "man/functions.html#GeophysicalFlows.BarotropicQG.enstrophy-Tuple{Any}",
+    "location": "man/functions/#GeophysicalFlows.BarotropicQG.enstrophy-Tuple{Any}",
     "page": "Functions",
     "title": "GeophysicalFlows.BarotropicQG.enstrophy",
     "category": "method",
@@ -361,7 +361,7 @@ var documenterSearchIndex = {"docs": [
 },
 
 {
-    "location": "man/functions.html#GeophysicalFlows.BarotropicQG.meanenergy-Tuple{Any}",
+    "location": "man/functions/#GeophysicalFlows.BarotropicQG.meanenergy-Tuple{Any}",
     "page": "Functions",
     "title": "GeophysicalFlows.BarotropicQG.meanenergy",
     "category": "method",
@@ -369,7 +369,7 @@ var documenterSearchIndex = {"docs": [
 },
 
 {
-    "location": "man/functions.html#GeophysicalFlows.BarotropicQG.meanenstrophy-Tuple{Any}",
+    "location": "man/functions/#GeophysicalFlows.BarotropicQG.meanenstrophy-Tuple{Any}",
     "page": "Functions",
     "title": "GeophysicalFlows.BarotropicQG.meanenstrophy",
     "category": "method",
@@ -377,7 +377,7 @@ var documenterSearchIndex = {"docs": [
 },
 
 {
-    "location": "man/functions.html#GeophysicalFlows.BarotropicQG.set_zeta!-Tuple{Any,GeophysicalFlows.BarotropicQG.Vars,Any,Any,Any}",
+    "location": "man/functions/#GeophysicalFlows.BarotropicQG.set_zeta!-Tuple{Any,GeophysicalFlows.BarotropicQG.Vars,Any,Any,Any}",
     "page": "Functions",
     "title": "GeophysicalFlows.BarotropicQG.set_zeta!",
     "category": "method",
@@ -385,7 +385,7 @@ var documenterSearchIndex = {"docs": [
 },
 
 {
-    "location": "man/functions.html#GeophysicalFlows.BarotropicQG.updatevars!-NTuple{4,Any}",
+    "location": "man/functions/#GeophysicalFlows.BarotropicQG.updatevars!-NTuple{4,Any}",
     "page": "Functions",
     "title": "GeophysicalFlows.BarotropicQG.updatevars!",
     "category": "method",
@@ -393,7 +393,7 @@ var documenterSearchIndex = {"docs": [
 },
 
 {
-    "location": "man/functions.html#GeophysicalFlows.BarotropicQG.work-Tuple{Any,GeophysicalFlows.BarotropicQG.ForcedVars,Any}",
+    "location": "man/functions/#GeophysicalFlows.BarotropicQG.work-Tuple{Any,GeophysicalFlows.BarotropicQG.ForcedVars,Any}",
     "page": "Functions",
     "title": "GeophysicalFlows.BarotropicQG.work",
     "category": "method",
@@ -401,7 +401,7 @@ var documenterSearchIndex = {"docs": [
 },
 
 {
-    "location": "man/functions.html#Functions-exported-from-BarotropicQG:-1",
+    "location": "man/functions/#Functions-exported-from-BarotropicQG:-1",
     "page": "Functions",
     "title": "Functions exported from BarotropicQG:",
     "category": "section",
