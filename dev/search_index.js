@@ -121,6 +121,38 @@ var documenterSearchIndex = {"docs": [
 },
 
 {
+    "location": "modules/multilayerqg/#",
+    "page": "MultilayerQG Module",
+    "title": "MultilayerQG Module",
+    "category": "page",
+    "text": ""
+},
+
+{
+    "location": "modules/multilayerqg/#MultilayerQG-Module-1",
+    "page": "MultilayerQG Module",
+    "title": "MultilayerQG Module",
+    "category": "section",
+    "text": "newcommandJmathsfJ"
+},
+
+{
+    "location": "modules/multilayerqg/#Basic-Equations-1",
+    "page": "MultilayerQG Module",
+    "title": "Basic Equations",
+    "category": "section",
+    "text": "This module solves the layered quasi-geostrophic equations on a beta-plane of variable fluid depth H-h(xy). The flow in each layer is obtained through a streamfunction psi_j as (u_j upsilon_j) = (-partial_ypsi_j partial_xpsi_j), j=1n, where n is the number of fluid layers.The QGPV in each layer ismathrmQGPV_j = q_j  + underbracef_0+beta y_textrmplanetary PV + delta_jnunderbracefracf_0 hH_n_textrmtopographic PVquad j=1nwhereq_1 = nabla^2psi_1 + F_32 1 (psi_2-psi_1)\nq_j = nabla^2psi_j + F_j-12 j (psi_j-1-psi_j) + F_j+12 j (psi_j+1-psi_j)quad j=2dotsn-1\nq_n = nabla^2psi_n + F_n-12 n (psi_n-1-psi_n)withF_j+12 k = fracf_0^2g_j+12 H_kquadtextandquad\ng_j+12 = gfracrho_j+1-rho_jrho_j+1 Therefore, in Fourier space the q\'s and psi\'s are related throughbeginpmatrix widehatq_boldsymbolk1vdotswidehatq_boldsymbolkn endpmatrix =\nunderbraceleft(-boldsymbolk^2mathbb1 + mathbbF right)_equiv mathbbS_boldsymbolk\nbeginpmatrix widehatpsi_boldsymbolk1vdotswidehatpsi_boldsymbolkn endpmatrixwheremathbbF equiv beginpmatrix\n -F_32 1               F_32 1     0     cdots     0\n  F_32 2  -(F_32 2+F_52 2)  F_52 2         vdots\n 0                             ddots     ddots    ddots  \n vdots                                                      0 \n 0                  cdots                0    F_n-12 n  -F_n-12 n\nendpmatrixIncluding an imposed zonal flow U_j(y) in each layer the equations of motion are:partial_t q_j + J(psi_j q_j ) + (U_j - partial_ypsi_j) partial_x Q_j +  U_j partial_x q_j  + (partial_y Q_j)(partial_xpsi_j) = -delta_jnmunabla^2psi_n - nu(-1)^n_nu nabla^2n_nu q_jwithpartial_y Q_j equiv beta - partial_y^2 U_j - (1-delta_j1)F_j-12 j (U_j-1-U_j) - (1-delta_jn)F_j+12 j (U_j+1-U_j) + delta_jnpartial_yeta \npartial_x Q_j equiv delta_jnpartial_xetaThe eddy kinetic energy in each layer is:textrmKE_j = dfracH_jH int dfrac12 boldsymbolnablapsi_j^2 fracmathrmd^2boldsymbolxL_x L_yquad j=1dotsnwhile the eddy potential energy related to each of fluid interface istextrmPE_j+12 = int dfrac12 dfracf_0^2g_j+12 (psi_j-psi_j+1)^2 fracmathrmd^2boldsymbolxL_x L_yquad j=1dotsn-1The lateral eddy fluxes in each layer are:textrmlateralfluxes_j = dfracH_jH int dfrac12 U_jupsilon_j partial_y u_j fracmathrmd^2boldsymbolxL_x L_yquad j=1dotsnwhile the vertical fluxes accros fluid interfaces are:textrmverticalfluxes_j+12 = int dfracf_0^2g_j+12 H (U_j-U_j+1)upsilon_j+1psi_j fracmathrmd^2boldsymbolxL_x L_yquad j=1dotsn-1\n"
+},
+
+{
+    "location": "modules/multilayerqg/#Implementation-1",
+    "page": "MultilayerQG Module",
+    "title": "Implementation",
+    "category": "section",
+    "text": "Matrices mathbbS_boldsymbolk as well as mathbbS^-1_boldsymbolk are included in params as params.S and params.invS respectively.You can get widehatpsi_j from widehatq_j with streamfunctionfrompv!(psih, qh, invS, grid), while to go from widehatpsi_j back to widehatq_j pvfromstreamfunction!(qh, psih, S, grid).The equations are time-stepped forward in Fourier space:partial_t widehatq_j = - widehatJ(psi_j q_j)  - widehatU_j partial_x Q_j - widehatU_j partial_x q_j\n+ widehat(partial_ypsi_j) partial_x Q_j  - widehat(partial_xpsi_j)(partial_y Q_j) + delta_jnmu k^2 widehatpsi_n - nu k^2n_nu widehatq_jIn doing so the Jacobian is computed in the conservative form: J(fg) = partial_y  (partial_x f) g -partial_x (partial_y f) g.Thus:mathcalL = - nu k^2n_nu mathcalN(widehatq_j) = - widehatJ(psi_j q_j) - widehatU_j partial_x Q_j - widehatU_j partial_x q_j\n + widehat(partial_ypsi_j)(partial_x Q_j) - widehat(partial_xpsi_j)(partial_y Q_j) + delta_jnmu k^2 widehatpsi_n "
+},
+
+{
     "location": "man/types/#",
     "page": "Private types",
     "title": "Private types",
@@ -381,7 +413,7 @@ var documenterSearchIndex = {"docs": [
     "page": "Functions",
     "title": "GeophysicalFlows.BarotropicQG.set_zeta!",
     "category": "method",
-    "text": "set_zeta!(prob, zeta)\nset_zeta!(s, v, g, zeta)\n\nSet the solution s.sol as the transform of zeta and update variables v on the grid g.\n\n\n\n\n\n"
+    "text": "set_zeta!(prob, zeta)\nset_zeta!(s, v, g, zeta)\n\nSet the solution sol as the transform of zeta and update variables v on the grid g.\n\n\n\n\n\n"
 },
 
 {
@@ -389,7 +421,7 @@ var documenterSearchIndex = {"docs": [
     "page": "Functions",
     "title": "GeophysicalFlows.BarotropicQG.updatevars!",
     "category": "method",
-    "text": "updatevars!(v, s, g)\n\nUpdate the vars in v on the grid g with the solution in s.sol.\n\n\n\n\n\n"
+    "text": "updatevars!(v, s, g)\n\nUpdate the vars in v on the grid g with the solution in sol.\n\n\n\n\n\n"
 },
 
 {
