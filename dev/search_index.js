@@ -21,7 +21,7 @@ var documenterSearchIndex = {"docs": [
     "page": "Home",
     "title": "Overview",
     "category": "section",
-    "text": "GeophysicalFlows.jl is a collection of modules which leverage the  FourierFlows.jl framework to provide solvers for problems in Geophysical Fluid Dynamics, on periodic domains and using Fourier-based pseudospectral  methods."
+    "text": "GeophysicalFlows.jl is a collection of modules which leverage the  FourierFlows.jl framework to provide solvers for problems in Geophysical Fluid Dynamics, on periodic domains and using Fourier-based pseudospectral methods."
 },
 
 {
@@ -29,7 +29,15 @@ var documenterSearchIndex = {"docs": [
     "page": "Home",
     "title": "Developers",
     "category": "section",
-    "text": "GeophysicalFlows is currently being developed by Gregory L. Wagner and Navid C. Constantinou."
+    "text": "FourierFlows is currently being developed by Navid C. Constantinou and Gregory L. Wagner."
+},
+
+{
+    "location": "#Cite-1",
+    "page": "Home",
+    "title": "Cite",
+    "category": "section",
+    "text": "The code is citable via zenodo."
 },
 
 {
