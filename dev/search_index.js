@@ -225,7 +225,7 @@ var documenterSearchIndex = {"docs": [
 },
 
 {
-    "location": "man/types/#GeophysicalFlows.BarotropicQG.ForcedVars-Tuple{Any}",
+    "location": "man/types/#GeophysicalFlows.BarotropicQG.ForcedVars-Union{Tuple{FourierFlows.AbstractGrid{T,Ta} where Ta}, Tuple{T}} where T",
     "page": "Private types",
     "title": "GeophysicalFlows.BarotropicQG.ForcedVars",
     "category": "method",
@@ -241,7 +241,7 @@ var documenterSearchIndex = {"docs": [
 },
 
 {
-    "location": "man/types/#GeophysicalFlows.BarotropicQG.Params-Tuple{Any,Any,Any,Function,Any,Any,Any,Any,Any}",
+    "location": "man/types/#GeophysicalFlows.BarotropicQG.Params-Union{Tuple{T}, Tuple{FourierFlows.AbstractGrid{T,Ta} where Ta,Any,Any,Function,Any,Any,Any,Any,Any}} where T",
     "page": "Private types",
     "title": "GeophysicalFlows.BarotropicQG.Params",
     "category": "method",
@@ -249,7 +249,7 @@ var documenterSearchIndex = {"docs": [
 },
 
 {
-    "location": "man/types/#GeophysicalFlows.BarotropicQG.StochasticForcedVars-Tuple{Any}",
+    "location": "man/types/#GeophysicalFlows.BarotropicQG.StochasticForcedVars-Union{Tuple{FourierFlows.AbstractGrid{T,Ta} where Ta}, Tuple{T}} where T",
     "page": "Private types",
     "title": "GeophysicalFlows.BarotropicQG.StochasticForcedVars",
     "category": "method",
@@ -257,7 +257,7 @@ var documenterSearchIndex = {"docs": [
 },
 
 {
-    "location": "man/types/#GeophysicalFlows.BarotropicQG.Vars-Tuple{Any}",
+    "location": "man/types/#GeophysicalFlows.BarotropicQG.Vars-Union{Tuple{FourierFlows.AbstractGrid{T,Ta} where Ta}, Tuple{T}} where T",
     "page": "Private types",
     "title": "GeophysicalFlows.BarotropicQG.Vars",
     "category": "method",
